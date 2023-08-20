@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+  font-family: consolas;
+  background: #222;
+}
+.tic-tac-toe {
+  /* width: 25%; */
+  padding: 0% 37.5%;
+}
+.tic-tac-toe h1 {
+  color: #eee;
+}
+.tic-tac-toe button {
+  padding: 8px 12px;
+  margin: 25px;
+  background: transparent;
+  border: 2px solid #eee;
+  color: #eee;
+  width: 100px;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tic-tac-toe button:hover {
+  background: #eee;
+  color: #222;
+}
+.sqaure-box-input {
+  border: 2px solid #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  display: grid;
+  height: 100px;
+  place-items: center;
+  width: 100px;
+}
+.tick-tac-container {
+  display: grid;
+  gap: 10px;
+}
+.turn-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.square-value {
+  color: white;
+}
+
+.cross-marked {
+  font-size: 4rem;
+  color: #62fffc;
+  border-radius: 5px;
+}
+.noughts-marked {
+  font-size: 4rem;
+  color: #ffa02e;
+  border-radius: 5px;
+}
+.turn {
+  border-radius: 9px !important;
+  margin: 3px;
+  height: 70px;
+  width: 70px;
+}
+.turn-active {
+  background: #49ff58 !important;
+}
+.turn-inactive {
+  background: none;
+}
+
+.winner {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  height: 100vh;
+  left: 0;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  opacity: 1;
+}
+.winner .text {
+  align-items: center;
+  background: #111;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 300px;
+  justify-content: center;
+  max-width: 400px;
+  width: 70%;
+}
+.winner .text h2 {
+  color: #eee;
+  font-size: 2.5em;
+  margin: 15px 0;
+}
